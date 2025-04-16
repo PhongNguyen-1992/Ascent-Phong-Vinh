@@ -1,3 +1,29 @@
 .text-cream-foreground {
     color: #fdf6e3;
 }
+
+@keyframes downup {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(20px);
+    }
+
+}
+
+@keyframes leftright {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(20px);
+    }
+
+}
