@@ -23,12 +23,47 @@
 
 <body>
   <!-- Header -->
+  <div class="top__headder bg-[#ed145b]">
+    <div class="container mx-auto top__headder__content flex gap-3 items-center justify-around text-white">
+      <div class=" left flex py-[13px] gap-7 sm:block hidden">
+        <ul class="flex gap-3">
+          <li class="flex gap-5 items-center text-center">
+            <i class="fa-solid fa-phone"></i>
+            <span>(629) 555-0129</span>
+          </li>
+          <li class="flex gap-5 items-center text-center">
+            <i class="fa-solid fa-envelope"></i>
+            <span>info@example.com</span>
+          </li>
+          <li class="flex gap-5 items-center text-center">
+            <i class="fa-solid fa-location-dot "></i>
+            <span>6391 Elgin St. Celina, 10299</span>
+          </li>
+        </ul>
+      </div>
+      <div class="right flex sm:block hidden">
+        <ul class="flex gap-5">
+          <li><i
+              class="fa-brands fa-square-facebook border border-white border-opacity-10 rounded-sm p-0.5 text-cream-foreground"></i>
+          </li>
+          <li><i
+              class="fa-brands fa-square-twitter border border-white border-opacity-10 rounded-sm p-0.5 text-cream-foreground"></i>
+          </li>
+          <li><i
+              class="fa-brands fa-linkedin border border-white border-opacity-10 rounded-sm p-0.5 text-cream-foreground"></i>
+          </li>
+          <li><i
+              class="fa-brands fa-square-pinterest border border-white border-opacity-10 rounded-sm p-0.5 text-cream-foreground"></i>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
   <header>
     <div class="header__content">
 
 
-      <nav
-        class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
+      <nav class="bg-white dark:bg-gray-900 start-0 border-b border-gray-200 dark:border-gray-600">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
             <img src="./IMG/logo.png" class="h-8" alt="Ascent Logo">
@@ -108,7 +143,20 @@
                   </ul>
                 </div>
               </li>
-            
+                <div id="dropdownBlog"
+                  class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+                  <ul class="py-2 text-sm text-gray-700 dark:text-gray-200">
+                    <li><a href="#"
+                        class="block px-4 py-2 hover:bg-[#F7941E] dark:hover:bg-gray-600 dark:hover:text-white">Blog
+                        Posts</a></li>
+                    <li><a href="#"
+                        class="block px-4 py-2 hover:bg-[#F7941E]  dark:hover:bg-gray-600 dark:hover:text-white">Blog
+                        Detail</a></li>
+                  </ul>
+                </div>
+              </li>
+
+
               <!-- Page Dropdown -->
               <li>
                 <button id="dropdownPageButton" data-dropdown-toggle="dropdownPage"
@@ -135,6 +183,53 @@
 
     </div>
   </header>
+  <section class="Carousel bg-warm pt-[78px] mb-15 mb-10 relative bg-[#fff0e5]">
+    <div class="Carousel__content container relative">
+      <div class="text_carousel flex flex-col items-center text-center ">
+        <h1
+          class="font-normal xl:text-[70px] lg:text-6xl md:text-5xl text-4xl xl:leading-[128%] lg:leading-[125%] md:leading-[120%]">
+          Exploring Minds
+        </h1>
+        <h1
+          class="font-normal xl:text-[70px] lg:text-6xl md:text-5xl text-4xl xl:leading-[128%] lg:leading-[125%] md:leading-[120%]">
+          <b>Elementary </b>
+          <b><span style="color:#ed145b ;">School</span></b>
+        </h1>
+        <p
+          class="pt-5 font-normal xl:text-[40px] md: text-xl lg:text-2xl xl:text-3xl xl:leading-[128%] lg:leading-[125%] md:leading-[120%]">
+          Starting a corporate business typically involves several <br> steps, such as develo a busines</p>
+        <button type="button"
+          class=" cursor-pointer text-white bg-[#1CBBB4] hover:bg-[#73BE48] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 text-xl mt-5 items-center">
+          Lear More</button>
+
+      </div>
+      <div class="pic_carousel1 ">
+        <img src="./IMG/boy_img_1.png" alt=""
+          class=" updown absolute -left-2.5 top-[20px] border-2 border-primary rounded-[125px] h-40px w-60px transform scale-70 xl:scale-100 lg:block hidden">
+      </div>
+      <div class="pic__carousel2">
+        <img src="./IMG/boy_img_2.png" alt=""
+          class=" updown absolute -right-2.5 bottom- border-2 border-secondary rounded-[125px] max-h-[369px] transform scale-70 xl:scale-100 lg:block hidden ">
+      </div>
+      <div class="pic__carousel3 lg:pt-[72px]">
+        <img src="./IMG/painting.png" alt=""
+          class="left-2.5 bottom- max-h-[369px] transform scale-70 xl:scale-100 lg:block hidden ">
+      </div>
+    </div>
+    <div class="banner__carousel" >
+      <div class="left__banner absolute top-20 leftright ">
+        <img src="./IMG/left-circle-1.png" alt="">
+        <img src="./IMG/left-circle-2.png" alt="">
+      </div>
+      <div class="right__banner absolute bottom-10 right-1 updown">
+        <img src="./IMG/right-circle.png" alt="">
+      </div>
+    </div>
+  </section>
+
+
+
+
   <!-- Number Talk -->
   <!-- About US -->
   <!-- Educational Programs -->
