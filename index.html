@@ -16,6 +16,11 @@
   <!-- tailwindcss -->
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+  <!-- Animate Style  -->
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
 
 
   <link rel="stylesheet" href="./Style/My.CSS">
@@ -23,7 +28,7 @@
 
 <body>
   <!-- Header -->
-  <div class="top__headder bg-[#ed145b]">
+  <div class="top__headder bg-[#ed145b] md:block hidden flex justify-between  ">
     <div class="container mx-auto top__headder__content flex gap-3 items-center justify-around text-white">
       <div class=" left flex py-[13px] gap-7 sm:block hidden">
         <ul class="flex gap-3">
@@ -59,11 +64,11 @@
       </div>
     </div>
   </div>
-  <header>
+  <header class="">
     <div class="header__content">
 
 
-      <nav class="bg-white dark:bg-gray-900 start-0 border-b border-gray-200 dark:border-gray-600">
+      <nav class="z-50 bg-white dark:bg-gray-900 start-0 border-b border-gray-200 dark:border-gray-600">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
             <img src="./IMG/logo.png" class="h-8" alt="Ascent Logo">
@@ -190,6 +195,7 @@
 
     </div>
   </header>
+  <!-- Carousel -->
   <section class="Carousel bg-warm pt-[78px] mb-15 mb-10 relative bg-[#fff0e5]">
     <div class="Carousel__content container relative">
       <div class="text_carousel flex flex-col items-center text-center ">
@@ -223,7 +229,7 @@
           class="left-2.5 bottom- max-h-[369px] transform scale-70 xl:scale-100 lg:block hidden ">
       </div>
     </div>
-    <div class="banner__carousel" >
+    <div class="banner__carousel">
       <div class="left__banner absolute top-20 leftright ">
         <img src="./IMG/left-circle-1.png" alt="">
         <img src="./IMG/left-circle-2.png" alt="">
@@ -233,11 +239,81 @@
       </div>
     </div>
   </section>
-
-
-
-
   <!-- Number Talk -->
+  <div class="number__talk pt-5">
+    <div class="container flex">
+      <div class="left__talk w-1/2">
+        <h3 class="text-[#F7941E] font-semibold">Number Talks</h3>
+        <h1 class="font-semibold text-10px sm:text-15px md:text-2xl lg:text-3xl xl: text-4xl pt-5 animate__animated animate__fadeInUp animation-delay: 0.5">Invest in education
+          invest <br> in the future</h1>
+        <p class="text-10px sm:text-10px md:text-15px lg:text-20px xl: text-25px pt-5 animate__animated animate__fadeInUp animation-delay: 0.5">Lorem ipsum dolor sit amet
+          consectetur. Amet lectus mi ultricies dictum facilisis <br> sem. Imperdiet massa turpis
+          sit proin metus volutpat loren ipsum <br> Lorem ipsum dolor sit amet consectetur. Amet lectus mi ultricies
+          dictum
+        </p>
+        <!--  Nút Nhấn  -->
+        <div class="relative inline-block group overflow-hidden rounded-md border border-gray-200 lg:mt-10 mt-7">
+          <div
+            class="absolute inset-0 bg-[#73BE48] translate-x-[-100%] group-hover:translate-x-0 transition-transform duration-700 ease-out">
+          </div>
+          <button type="button"
+            class="relative z-10 px-6 py-3 text-gray-800 group-hover:text-white transition-colors duration-700 ease-in-out">
+            Get a Quote
+          </button>
+        </div>
+      </div>
+      <div class="right__talk w-1/2 grid sm:grid-cols-2 grid-cols-1 gap-7.5 ">
+
+        <a href="#"
+          class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-sm md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 text-center animate__animated animate__fadeInUp animation-delay: 0.5 ">
+          <div
+            class="flex items-center justify-center rounded-full bg-primary text-cream-foreground lg:w-20 lg:h-20 w-16 h-16 m-3">
+            <i class="fa-solid fa-school lg:text-[40px] text-2xl "></i>
+          </div>
+          <div class="flex flex-col justify-between p-4 leading-normal">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">20K</h5>
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 text-center">Running Students</p>
+          </div>
+        </a>
+        <a href="#"
+          class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-sm md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 text-center animate__animated animate__fadeInUp animation-delay: 0.5">
+          <div
+            class="flex items-center justify-center rounded-full bg-primary1 text-cream-foreground lg:w-20 lg:h-20 w-16 h-16 m-3">
+            <i class="fa-solid fa-book lg:text-[40px] text-2xl "></i>
+          </div>
+          <div class="flex flex-col justify-between p-4 leading-normal">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">13K</h5>
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 text-center">Completed</p>
+          </div>
+        </a>
+        <a href="#"
+          class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-sm md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 text-center animate__animated animate__fadeInUp animation-delay: 1s">
+          <div
+            class="flex items-center justify-center rounded-full bg-primary2 text-cream-foreground lg:w-20 lg:h-20 w-16 h-16 m-3">
+            <i class="fa-solid fa-cubes lg:text-[40px] text-2xl "></i>
+          </div>
+          <div class="flex flex-col justify-between p-4 leading-normal">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">3K</h5>
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 text-center">Award Winning</p>
+          </div>
+        </a>
+        <a href="#"
+          class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-sm md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 text-center animate__animated animate__fadeInUp animation-delay: 1s">
+          <div
+            class="flex items-center justify-center rounded-full bg-primary3 text-cream-foreground lg:w-20 lg:h-20 w-16 h-16 m-3">
+            <i class="fa-solid fa-award lg:text-[40px] text-2xl "></i>
+          </div>
+          <div class="flex flex-col justify-between p-4 leading-normal">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">13K</h5>
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Guardian <br>Satishfaction</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+
   <!-- About US -->
   <!-- Educational Programs -->
   <!-- Latest Portfolio -->
