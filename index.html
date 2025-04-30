@@ -256,7 +256,7 @@
           </button>
         </div>
       </div>
-      <div class="right__talk w-1/2 grid sm:grid-cols-2 grid-cols-1 gap-7.5 ">
+      <div class="right__talk w-1/2 grid sm:grid-cols-2 gap-7.5 lg:grid-cols-2 ">
 
         <a href="#"
           class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-sm md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 text-center animate__animated animate__fadeInUp animation-delay: 0.5 ">
@@ -312,11 +312,12 @@
   <div class="about_us mt-10">
     <div class="container flex w-1/2">
       <div class="left__aboutus w-1/2 flex relative">
-        <div class="left__left w-1/2">
+        <div class="left__left w-1/2 lg:block hidden ">
           <img src="./IMG/about-1.png" alt="">
         </div>
         <div class="right__left absolute right-20 bottom-0">
-          <div class="ml-10  max-w-sm bg-[#fff0e5] border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 flex flex-col justify-center items-center text-center ">
+          <div
+            class="ml-10  max-w-sm bg-[#fff0e5] border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 flex flex-col justify-center items-center text-center ">
             <a href="#">
               <img class="mt-5" src="./IMG/icreement.png" alt="" />
             </a>
@@ -327,10 +328,13 @@
               <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Learning Ladder School</p>
             </div>
           </div>
-          <div class="ml-10 mt-5 max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 flex flex-col justify-center items-center text-center ">
-          <div class="p-2">
+          <div
+            class="ml-10 mt-5 max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 flex flex-col justify-center items-center text-center ">
+            <div class="p-2">
               <a href="#">
-                <h5 class="mb-2 text-left text-2xl font-bold tracking-tight dark:text-white text-[#1cbbb4] font-extrabold">10+</h5>
+                <h5
+                  class="mb-2 text-left text-2xl font-bold tracking-tight dark:text-white text-[#1cbbb4] font-extrabold">
+                  10+</h5>
               </a>
               <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Learning Ladder School</p>
             </div>
@@ -367,7 +371,7 @@
 
   <!-- Educational Programs -->
   <div class="relative Educational__Program mt-10">
-    <div class="absolute bg__right right-15 leftright">
+    <div class="absolute bg__right right-15 leftright lg:block hidden ">
       <img src="./IMG/pencil-rocket.png" alt="">
     </div>
     <div class="container">
@@ -469,22 +473,281 @@
       </div>
     </div>
   </div>
-  <!-- Latest Portfolio -->
-  <!-- Latest Service -->
-  <!-- Some Faq -->
-  <!-- Meet Our Professional -->
-  <!-- Student knowledge -->
-  <!-- Clients Testimonia -->
-  <!-- Latest Blog And News -->
-  <!-- Footer -->
 
-  <!-- tailwindcss -->
-  <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
-  <!-- Swiper JS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
-  <script src="https://unpkg.com/feather-icons"></script>
-  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+
+  <!-- Latest Portfolio -->
+  <div class="Portfolio mt-10">
+    <div class="container">
+      <div class="Port__headder text-center">
+        <h2 class="text-[#1cbbb4] font-bold text-2xl">Latest Portfolio</h2>
+        <h1 class="font-bold text-3xl">Exploring Minds Elementary School <br> Education the only school</h1>
+      </div>
+      <div class="Port__tabs">
+        <!-- nút bấm -->
+        <div class="mb-4">
+          <ul class="flex mt-2 flex-wrap justify-center -mb-px text-sm font-medium text-center" id="default-styled-tab"
+            data-tabs-toggle="#default-styled-tab-content"
+            data-tabs-active-classes="px-3 py-2 text-20px font-700 text-white bg-[#f7941e] border border-[#F2F2F2] rounded-[10px] cursor-pointer hover:bg-[#f7941e] hover:text-cream-foreground transition-all duration-500 target-tab active-tab"
+            role="tablist">
+            <li class="me-2" role="presentation">
+              <button class="inline-block p-4  rounded-t-lg" id="profile-styled-tab" data-tabs-target="#Education"
+                type="button" role="tab" aria-controls="profile" aria-selected="false">Education</button>
+            </li>
+            <li class="me-2" role="presentation">
+              <button
+                class="inline-block p-4  rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
+                id="dashboard-styled-tab" data-tabs-target="#School" type="button" role="tab" aria-controls="dashboard"
+                aria-selected="false">School</button>
+            </li>
+            <li class="me-2" role="presentation">
+              <button
+                class="inline-block p-4 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
+                id="settings-styled-tab" data-tabs-target="#Learn" type="button" role="tab" aria-controls="settings"
+                aria-selected="false">Learn</button>
+            </li>
+            <li class="me-2" role="presentation">
+              <button
+                class="inline-block p-4 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
+                id="contacts-styled-tab" data-tabs-target="#Child" type="button" role="tab" aria-controls="contacts"
+                aria-selected="false">Child</button>
+            </li>
+            <li role="presentation">
+              <button
+                class="inline-block p-4 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
+                id="Coaching-styled-tab" data-tabs-target="#Coaching" type="button" role="tab" aria-controls="Coaching"
+                aria-selected="false">Coaching</button>
+            </li>
+          </ul>
+        </div>
+        <!-- nội dung trong nút -->
+        <div id="default-styled-tab-content">
+          <div class="hidden p-4 rounded-lg  dark:bg-gray-800" id="Education" role="tabpanel"
+            aria-labelledby="profile-tab">
+            <div class="grid grid-cols-3 grid-rows-2 gap-4 max-w-5xl mx-auto">
+              <!-- Ảnh lớn chiếm 2 hàng -->
+              <div class="relative row-span-2 group overflow-hidden rounded-xl">
+                <img src="./IMG/portfolio-1.png" alt="" class="w-full h-full object-cover rounded-xl" />
+                <!-- backgroud che -->
+                <div
+                  class="absolute  m-5  rounded-lg inset-0 bg-[#f7941e]/50 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+                  <p class="text-white text-lg font-semibold text-center">Exploring Minds <br> Elementary Best School
+                    <br> <span>Dreamland Elementary</span>
+                  </p>
+                </div>
+                <!-- icon trên background -->
+              </div>
+              <!-- Ảnh nhỏ bên phải -->
+              <div class="relative group overflow-hidden rounded-xl">
+                <img src="./IMG/portfolio-2.png" alt="" class=" w-full h-full object-cover rounded-xl" />
+                <div
+                  class="absolute  m-5  rounded-lg inset-0 bg-[#f7941e]/50 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+                  <p class="text-white text-lg font-semibold text-center">Exploring Minds <br> Elementary Best School
+                    <br> <span>Dreamland Elementary</span>
+                  </p>
+                </div>
+              </div>
+              <div class="relative group overflow-hidden rounded-xl">
+                <img src="./IMG/portfolio-3.png" alt="" class="w-full h-full object-cover rounded-xl" />
+                <div
+                  class="absolute  m-5  rounded-lg inset-0 bg-[#f7941e]/50 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+                  <p class="text-white text-lg font-semibold text-center">Exploring Minds <br> Elementary Best School
+                    <br> <span>Dreamland Elementary</span>
+                  </p>
+                </div>
+              </div>
+              <div class="relative group overflow-hidden rounded-xl">
+                <img src="./IMG/portfolio-5.png" alt="" class="w-full h-full object-cover rounded-xl" />
+                <div
+                  class="absolute  m-5  rounded-lg inset-0 bg-[#f7941e]/50 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+                  <p class="text-white text-lg font-semibold text-center">Exploring Minds <br> Elementary Best School
+                    <br> <span>Dreamland Elementary</span>
+                  </p>
+                </div>
+              </div>
+              <div class="relative group overflow-hidden rounded-xl">
+                <img src="./IMG/portfolio-6.png" alt="" class="w-full h-full object-cover rounded-xl" />
+                <div
+                  class="absolute  m-5  rounded-lg inset-0 bg-[#f7941e]/50 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+                  <p class="text-white text-lg font-semibold text-center">Exploring Minds <br> Elementary Best School
+                    <br> <span>Dreamland Elementary</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="hidden p-4 rounded-lg  dark:bg-gray-800" id="School" role="tabpanel"
+            aria-labelledby="dashboard-tab">
+            <div class="grid grid-cols-2 grid-rows-2 gap-4 max-w-5xl mx-auto">
+              <div class="relative group overflow-hidden rounded-xl">
+                <img src="./IMG/portfolio-1.png" alt="" class="w-full max-h-[300px] object-cover rounded-xl" />
+                <div
+                  class="absolute  m-5  rounded-lg inset-0 bg-[#f7941e]/50 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+                  <p class="text-white text-lg font-semibold text-center">Exploring Minds <br> Elementary Best School
+                    <br> <span>Dreamland Elementary</span>
+                  </p>
+                </div>
+              </div>
+              <div class="relative group overflow-hidden rounded-xl">
+                <img src="./IMG/portfolio-2.png" alt="" class="w-full h-full object-cover rounded-xl" />
+                <div
+                  class="absolute  m-5  rounded-lg inset-0 bg-[#f7941e]/50 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+                  <p class="text-white text-lg font-semibold text-center">Exploring Minds <br> Elementary Best School
+                    <br> <span>Dreamland Elementary</span>
+                  </p>
+                </div>
+              </div>
+              <div class="relative group overflow-hidden rounded-xl">
+                <img src="./IMG/portfolio-3.png" alt="" class="w-full max-h-[300px] object-cover rounded-xl" />
+                <div
+                  class="absolute  m-5  rounded-lg inset-0 bg-[#f7941e]/50 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+                  <p class="text-white text-lg font-semibold text-center">Exploring Minds <br> Elementary Best School
+                    <br> <span>Dreamland Elementary</span>
+                  </p>
+                </div>
+              </div>
+              <div class="relative group overflow-hidden rounded-xl">
+                <img src="./IMG/portfolio-5.png" alt="" class="w-full max-h-[300px] object-cover rounded-xl" />
+                <div
+                  class="absolute  m-5  rounded-lg inset-0 bg-[#f7941e]/50 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+                  <p class="text-white text-lg font-semibold text-center">Exploring Minds <br> Elementary Best School
+                    <br> <span>Dreamland Elementary</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="hidden p-4 rounded-lg  dark:bg-gray-800" id="Learn" role="tabpanel"
+            aria-labelledby="settings-tab">
+            <div class="grid grid-cols-2 grid-rows-1 gap-4 max-w-5xl mx-auto">
+              <div class="relative group overflow-hidden rounded-xl">
+                <img src="./IMG/portfolio-3.png" alt="" class="w-full max-h-[300px] object-cover rounded-xl" />
+                <div
+                  class="absolute  m-5  rounded-lg inset-0 bg-[#f7941e]/50 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+                  <p class="text-white text-lg font-semibold text-center">Exploring Minds <br> Elementary Best School
+                    <br> <span>Dreamland Elementary</span>
+                  </p>
+                </div>
+              </div>
+              <div class="relative group overflow-hidden rounded-xl">
+                <img src="./IMG/portfolio-5.png" alt="" class="w-full max-h-[300px] object-cover rounded-xl" />
+                <div
+                  class="absolute  m-5  rounded-lg inset-0 bg-[#f7941e]/50 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+                  <p class="text-white text-lg font-semibold text-center">Exploring Minds <br> Elementary Best School
+                    <br> <span>Dreamland Elementary</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="hidden p-4 rounded-lg  dark:bg-gray-800" id="Child" role="tabpanel"
+            aria-labelledby="contacts-tab">
+            <div class="grid grid-cols-2 grid-rows-1 gap-4 max-w-5xl mx-auto">
+              <div class="relative group overflow-hidden rounded-xl">
+                <img src="./IMG/portfolio-1.png" alt="" class="w-full max-h-[300px] object-cover rounded-xl" />
+                <div
+                  class="absolute  m-5  rounded-lg inset-0 bg-[#f7941e]/50 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+                  <p class="text-white text-lg font-semibold text-center">Exploring Minds <br> Elementary Best School
+                    <br> <span>Dreamland Elementary</span>
+                  </p>
+                </div>
+              </div>
+              <div class="relative group overflow-hidden rounded-xl">
+                <img src="./IMG/portfolio-2.png" alt="" class="w-full h-full object-cover rounded-xl" />
+                <div
+                  class="absolute  m-5  rounded-lg inset-0 bg-[#f7941e]/50 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+                  <p class="text-white text-lg font-semibold text-center">Exploring Minds <br> Elementary Best School
+                    <br> <span>Dreamland Elementary</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="hidden p-4 rounded-lg  dark:bg-gray-800" id="Coaching" role="tabpanel"
+            aria-labelledby="Coaching-tab">
+            <div class="grid grid-cols-3 grid-rows-2 gap-4 max-w-5xl mx-auto">
+              <!-- Ảnh lớn chiếm 2 hàng -->
+              <div class="relative row-span-2 group overflow-hidden rounded-xl">
+                <img src="./IMG/portfolio-1.png" alt="" class="w-full h-full object-cover rounded-xl" />
+                <!-- backgroud che -->
+                <div
+                  class="absolute  m-5  rounded-lg inset-0 bg-[#f7941e]/50 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+                  <p class="text-white text-lg font-semibold text-center">Exploring Minds <br> Elementary Best School
+                    <br> <span>Dreamland Elementary</span>
+                  </p>
+                </div>
+                <!-- icon trên background -->
+              </div>
+              <!-- Ảnh nhỏ bên phải -->
+              <div class="relative group overflow-hidden rounded-xl">
+                <img src="./IMG/portfolio-2.png" alt="" class=" w-full h-full object-cover rounded-xl" />
+                <div
+                  class="absolute  m-5  rounded-lg inset-0 bg-[#f7941e]/50 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+                  <p class="text-white text-lg font-semibold text-center">Exploring Minds <br> Elementary Best School
+                    <br> <span>Dreamland Elementary</span>
+                  </p>
+                </div>
+              </div>
+              <div class="relative group overflow-hidden rounded-xl">
+                <img src="./IMG/portfolio-3.png" alt="" class="w-full h-full object-cover rounded-xl" />
+                <div
+                  class="absolute  m-5  rounded-lg inset-0 bg-[#f7941e]/50 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+                  <p class="text-white text-lg font-semibold text-center">Exploring Minds <br> Elementary Best School
+                    <br> <span>Dreamland Elementary</span>
+                  </p>
+                </div>
+              </div>
+              <div class="relative group overflow-hidden rounded-xl">
+                <img src="./IMG/portfolio-5.png" alt="" class="w-full h-full object-cover rounded-xl" />
+                <div
+                  class="absolute  m-5  rounded-lg inset-0 bg-[#f7941e]/50 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+                  <p class="text-white text-lg font-semibold text-center">Exploring Minds <br> Elementary Best School
+                    <br> <span>Dreamland Elementary</span>
+                  </p>
+                </div>
+              </div>
+              <div class="relative group overflow-hidden rounded-xl">
+                <img src="./IMG/portfolio-6.png" alt="" class="w-full h-full object-cover rounded-xl" />
+                <div
+                  class="absolute  m-5  rounded-lg inset-0 bg-[#f7941e]/50 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+                  <p class="text-white text-lg font-semibold text-center">Exploring Minds <br> Elementary Best School
+                    <br> <span>Dreamland Elementary</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+
+      <!-- Latest Service -->
+      <!-- Some Faq -->
+      <!-- Meet Our Professional -->
+      <!-- Student knowledge -->
+      <!-- Clients Testimonia -->
+      <!-- Latest Blog And News -->
+      <!-- Footer -->
+
+      <!-- tailwindcss -->
+      <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+      <!-- Swiper JS -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+      <script src="https://unpkg.com/feather-icons"></script>
+      <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
 </body>
 
 </html>
