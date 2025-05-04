@@ -38,6 +38,17 @@
     }
 
 } 
+@keyframes lac_lu {
+    0% {
+        transform: skewX(0deg);
+    }
+    50% {
+        transform: skewX(5deg);
+    }
+    100% {
+        transform: skewX(0deg);
+    }
+}
 
 .updown {
     animation: downup 2s ease-in-out infinite
