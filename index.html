@@ -29,47 +29,46 @@
 
 <body>
   <!-- Header -->
-  <div class="top__headder bg-[#ed145b] md:block hidden flex justify-between">
-    <div class="container mx-auto top__headder__content flex gap-3 items-center justify-around text-white">
-      <div class=" left flex py-[13px] gap-7 sm:block hidden">
-        <ul class="flex gap-3">
-          <li class="flex gap-5 items-center text-center">
-            <i class="fa-solid fa-phone"></i>
-            <span>(629) 555-0129</span>
-          </li>
-          <li class="flex gap-5 items-center text-center">
-            <i class="fa-solid fa-envelope"></i>
-            <span>info@example.com</span>
-          </li>
-          <li class="flex gap-5 items-center text-center">
-            <i class="fa-solid fa-location-dot "></i>
-            <span>6391 Elgin St. Celina, 10299</span>
-          </li>
-        </ul>
-      </div>
-      <div class="right flex sm:block hidden">
-        <ul class="flex gap-5">
-          <li><i
-              class="fa-brands fa-square-facebook border border-white border-opacity-10 rounded-sm p-0.5 text-cream-foreground"></i>
-          </li>
-          <li><i
-              class="fa-brands fa-square-twitter border border-white border-opacity-10 rounded-sm p-0.5 text-cream-foreground"></i>
-          </li>
-          <li><i
-              class="fa-brands fa-linkedin border border-white border-opacity-10 rounded-sm p-0.5 text-cream-foreground"></i>
-          </li>
-          <li><i
-              class="fa-brands fa-square-pinterest border border-white border-opacity-10 rounded-sm p-0.5 text-cream-foreground"></i>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
   <header class="">
-    <div class="header__content">
-
-
-      <nav class="z-50 bg-white dark:bg-gray-900 start-0 border-b border-gray-200 dark:border-gray-600">
+    <div class="header__content bg-[#ed145b]">
+      <div class="container flex lg:flex-row flex-col justify-between items-center gap-2 py-[2px] ">
+        <div class="mx-auto top__headder__content gap-3 items-center text-white py-[13px]">
+          <div class=" left flex gap-7 sm:block hidden">
+            <ul class="flex gap-3">
+              <li class="flex gap-5 items-center text-center">
+                <i class="fa-solid fa-phone"></i>
+                <span>(629) 555-0129</span>
+              </li>
+              <li class="flex gap-5 items-center text-center">
+                <i class="fa-solid fa-envelope"></i>
+                <span>info@example.com</span>
+              </li>
+              <li class="flex gap-5 items-center text-center">
+                <i class="fa-solid fa-location-dot "></i>
+                <span>6391 Elgin St. Celina, 10299</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="right sm:block hidden">
+          <ul class="flex gap-5">
+            <li><i
+                class="fa-brands fa-square-facebook border border-white border-opacity-10 rounded-sm p-0.5 text-cream-foreground"></i>
+            </li>
+            <li><i
+                class="fa-brands fa-square-twitter border border-white border-opacity-10 rounded-sm p-0.5 text-cream-foreground"></i>
+            </li>
+            <li><i
+                class="fa-brands fa-linkedin border border-white border-opacity-10 rounded-sm p-0.5 text-cream-foreground"></i>
+            </li>
+            <li><i
+                class="fa-brands fa-square-pinterest border border-white border-opacity-10 rounded-sm p-0.5 text-cream-foreground"></i>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <nav
+        class="top-0 left-0 z-[999] w-full bg-white dark:bg-gray-900 start-0 border-b border-gray-200 dark:border-gray-600">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
             <img src="./IMG/logo.png" class="h-8" alt="Ascent Logo">
@@ -228,6 +227,11 @@
       <div class="pic__carousel3 lg:pt-[72px]">
         <img src="./IMG/painting.png" alt=""
           class="left-2.5 bottom- max-h-[369px] transform scale-70 xl:scale-100 lg:block hidden ">
+      </div>
+      <div class="pic__carousel4 flex absolute right-[87px] top-14 lac_lu">
+        <img src="./IMG/shap.png" alt="shap-2" class="w-7.5 h-12.5 relative top-9">
+        <img src="./IMG/shap.png" alt="shap-1">
+        <img src="./IMG/shap.png" alt="shap-2" class="w-5 h-8 -mt-7">
       </div>
     </div>
     <div class="banner__carousel">
@@ -395,7 +399,8 @@
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto px-4">
 
           <!-- Card 1 -->
-          <div class="relative group bg-white border-2 border-[#F2F2F2] rounded-xl px-6 py-6 pl-20 flex items-center wow fadeInUp animation-delay: 1">
+          <div
+            class="relative group bg-white border-2 border-[#F2F2F2] rounded-xl px-6 py-6 pl-20 flex items-center wow fadeInUp animation-delay: 1">
             <!--Icon -->
             <div
               class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1/2  bg-white border-2 border-[#F2F2F2] p-4 rounded-lg  transition-all duration-300 group-hover:bg-[#73be48]">
@@ -412,7 +417,8 @@
                 Lorem ipsum dolor sit amet consectetur adipiscing elit platea <br> the ,osr of a proin mollis pretium
                 facilisi in, ligula volutpat
               </p>
-              <a href="#" class="text-black font-medium hover:text-[#73be48] transition-all duration-300">Read More <i class="fa-solid fa-arrow-right"></i></a>
+              <a href="#" class="text-black font-medium hover:text-[#73be48] transition-all duration-300">Read More <i
+                  class="fa-solid fa-arrow-right"></i></a>
             </div>
           </div>
           <!-- Card 2 -->
@@ -434,11 +440,13 @@
                 Lorem ipsum dolor sit amet consectetur adipiscing elit platea <br> the ,osr of a proin mollis pretium
                 facilisi in, ligula volutpat
               </p>
-              <a href="#" class="text-black font-medium hover:text-[#73be48] transition-all duration-300">Read More <i class="fa-solid fa-arrow-right"></i></a>
+              <a href="#" class="text-black font-medium hover:text-[#73be48] transition-all duration-300">Read More <i
+                  class="fa-solid fa-arrow-right"></i></a>
             </div>
           </div>
           <!-- Card 3 -->
-          <div class="relative group bg-white border-2 border-[#F2F2F2] rounded-xl px-6 py-6 pl-20 flex items-center wow fadeInUp animation-delay: 2">
+          <div
+            class="relative group bg-white border-2 border-[#F2F2F2] rounded-xl px-6 py-6 pl-20 flex items-center wow fadeInUp animation-delay: 2">
             <!--Icon -->
             <div
               class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1/2  bg-white border-2 border-[#F2F2F2] p-4 rounded-lg  transition-all duration-300 group-hover:bg-[#73be48]">
@@ -455,7 +463,8 @@
                 Lorem ipsum dolor sit amet consectetur adipiscing elit platea <br> the ,osr of a proin mollis pretium
                 facilisi in, ligula volutpat
               </p>
-              <a href="#" class="text-black font-medium hover:text-[#73be48] transition-all duration-300">Read More <i class="fa-solid fa-arrow-right"></i></a>
+              <a href="#" class="text-black font-medium hover:text-[#73be48] transition-all duration-300">Read More <i
+                  class="fa-solid fa-arrow-right"></i></a>
             </div>
           </div>
           <!-- Card 4 -->
@@ -477,7 +486,8 @@
                 Lorem ipsum dolor sit amet consectetur adipiscing elit platea <br> the ,osr of a proin mollis pretium
                 facilisi in, ligula volutpat
               </p>
-              <a href="#" class="text-black font-medium hover:text-[#73be48] transition-all duration-300">Read More <i class="fa-solid fa-arrow-right"></i></a>
+              <a href="#" class="text-black font-medium hover:text-[#73be48] transition-all duration-300">Read More <i
+                  class="fa-solid fa-arrow-right"></i></a>
             </div>
           </div>
         </div>
@@ -491,7 +501,9 @@
     <div class="container">
       <div class="Port__headder text-center">
         <h2 class="text-[#1cbbb4] font-bold text-2xl">Latest Portfolio</h2>
-        <h1 class="font-bold text-3xl wow fadeInUp animation-delay: 1">Exploring Minds Elementary School <br> Education the only school</h1>
+        <h1 class="font-bold text-3xl wow fadeInUp animation-delay: 1">Exploring Minds Elementary School <br>
+          Education
+          the only school</h1>
       </div>
       <div class="Port__tabs">
         <!-- nút bấm -->
@@ -532,8 +544,8 @@
         </div>
         <!-- nội dung trong nút -->
         <div id="default-styled-tab-content">
-          <div class="hidden p-4 rounded-lg  dark:bg-gray-800 wow fadeInUp animation-delay: 2s" id="Education" role="tabpanel"
-            aria-labelledby="profile-tab">
+          <div class="hidden p-4 rounded-lg  dark:bg-gray-800 wow fadeInUp animation-delay: 2s" id="Education"
+            role="tabpanel" aria-labelledby="profile-tab">
             <div class="grid grid-cols-3 grid-rows-2 gap-4 max-w-5xl mx-auto">
               <!-- Ảnh lớn chiếm 2 hàng -->
               <div class="relative row-span-2 group overflow-hidden rounded-xl">
@@ -742,7 +754,8 @@
     <div class="container">
       <div class="top__service flex lg:flex-row flex-col justify-between lg:items-center ">
         <div class="left__servicer flex-shrink-0 flex-grow-0 basis-auto lg:w-[30%]">
-          <h2 class="text-secondary-foreground font-bubblegum-sans text-[19px] wow fadeInUp animation-delay: 1s text-[#1cbbb4] font-bold">
+          <h2
+            class="text-secondary-foreground font-bubblegum-sans text-[19px] wow fadeInUp animation-delay: 1s text-[#1cbbb4] font-bold">
             Latest Service</h2>
           <h1
             class="font-bold lg:text-[32px] md:text-[28px] text-2xl lg:leading-[130%] md:leading-[120%] leading-[110%] wow fadeInUp animation-delay: 2s">
@@ -753,7 +766,7 @@
             mollis pretium facilisi in, ligula volutpat</p>
         </div>
       </div>
-      <div class="bottom__service flex lg:flex-row flex-col justify-between lg:items-center ">
+      <div class="bottom__service flex lg:flex-row flex-col justify-between lg:items-center">
         <div class="left__bottom w-[20%]">
 
 
@@ -906,8 +919,8 @@
         slidesToShow: 3,
         slidesToScroll: 3,
         autoplay: true,
-        autoplaySpeed: 2000,
-        dot: false
+        autoplaySpeed: 1500,
+        dots: false
 
       });
     });
